@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="style.css">
+
+  <header>
+    <h1>SmartReferral</h1>
+    <p>FHIR-Based Referral Matching</p>
+  </header>
+
+  <div class="card">
+    <h2>Create Referral</h2>
+
+    <label>Specialty</label>
+    <select id="specialty">
+      <option value="Cardiology">Cardiology</option>
+      <option value="Dermatology">Dermatology</option>
+    </select>
+
+    <label>Insurance</label>
+    <select id="insurance">
+      <option value="BlueCross">BlueCross</option>
+      <option value="Aetna">Aetna</option>
+      <option value="United">United</option>
+    </select>
+
+    <button id="findProviders">Find Providers</button>
+  </div>
+
+  <div class="card">
+    <h2>Providers</h2>
+    <div id="providerResults"></div>
+  </div>
+
+  <script src="app.js"></script>
